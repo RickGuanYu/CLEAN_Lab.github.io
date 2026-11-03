@@ -1,19 +1,51 @@
 ---
-layout: archive
-permalink: /year-archive/
-title: "Blog posts"
-author_profile: true
+layout: single
+permalink: /people/
+title: People
+author_profile: false
 redirect_from:
+  - /year-archive/
   - /wordpress/blog-posts/
 ---
+<h2>Principal investigator</h2>
+<div class="clean-pi">
+  <div class="clean-pi-portrait">
+    <img src="{{ '/images/people/yu-guan.jpg' | relative_url }}" alt="Dr. Yu GUAN" width="799" height="1200">
+  </div>
+  <div class="clean-pi-bio">
+    <h3>Short bio</h3>
+    <p><a href="{{ site.author.uri }}">Dr. Yu GUAN</a> obtained his PhD in Mechanical Engineering from The Hong Kong University of Science and Technology, where he subsequently worked as a Postdoctoral Fellow before joining PolyU AAE as an Assistant Professor. His research has been supported by funding from the National Natural Science Foundation of China, the Research Grants Council of Hong Kong, and the Innovation and Technology Commission of Hong Kong, among others.</p>
+  </div>
+  <section class="clean-featured" aria-label="Photos by Yu Guan">
+    <div class="clean-featured-frame">
+      <img src="{{ '/images/pi-album/2024_3200.jpg' | relative_url }}" alt="Front view of a jet on display at an air show" width="1500" height="1125">
+      <img src="{{ '/images/pi-album/2024_3094.jpg' | relative_url }}" alt="Side view of a jet outside the International Hall" width="1500" height="1125" hidden loading="lazy">
+      <img src="{{ '/images/pi-album/2025_0912.jpg' | relative_url }}" alt="Naval ship dressed with signal flags at the waterfront" width="1500" height="1125" hidden loading="lazy">
+      <img src="{{ '/images/pi-album/2025_0907.jpg' | relative_url }}" alt="Aircraft carrier across the harbour against a mountain backdrop" width="1500" height="1125" hidden loading="lazy">
+    </div>
+    {% include clean-featured-controls.html %}
+  </section>
+</div>
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-{% for post in site.posts %}
-  {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-  {% if year != written_year %}
-    <h2 id="{{ year | slugify }}" class="archive__subtitle">{{ year }}</h2>
-    {% capture written_year %}{{ year }}{% endcapture %}
-  {% endif %}
-  {% include archive-single.html %}
+<h2>Current members</h2>
+<div class="clean-grid clean-four-column-grid">
+  {% for person in site.data.clean_team.members %}
+  <article class="clean-member">
+    <img class="clean-portrait" src="{{ person.photo | relative_url }}" alt="{{ person.name | escape }}" loading="lazy">
+    <h3>{{ person.name | escape }}</h3>
+    <p>{{ person.role | escape }}<br>{{ person.duration | escape }}</p>
+    {% include clean-team-publications.html person=person show_heading=true %}
+  </article>
+  {% endfor %}
+</div>
+
+<h2>Alumni</h2>
+{% for person in site.data.clean_team.alumni %}
+<article class="clean-alumnus">
+  <div class="clean-alumnus-details">
+    <h3>{{ person.name | escape }} <span>({{ person.role | escape }}, {{ person.duration | escape }})</span></h3>
+    {% include clean-team-publications.html person=person %}
+  </div>
+  <img class="clean-alumnus-photo" src="{{ person.photo | relative_url }}" alt="{{ person.name | escape }}" loading="lazy">
+</article>
 {% endfor %}

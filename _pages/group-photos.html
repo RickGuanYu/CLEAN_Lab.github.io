@@ -1,0 +1,14 @@
+---
+layout: single
+title: Group Photos
+permalink: /group-photos/
+author_profile: false
+---
+<div class="clean-grid clean-four-column-grid clean-photo-gallery">
+  {% for photo in site.data.clean_highlights.photos %}
+  <figure>
+    <img src="{{ photo.image | relative_url }}" alt="{{ photo.caption | escape }}" loading="lazy">
+    <figcaption>{{ photo.caption | escape }}</figcaption>
+  </figure>
+  {% endfor %}
+</div>

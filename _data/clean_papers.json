@@ -1,0 +1,172 @@
+[
+  {
+    "title": "Nonlinear Forced Response of a Self-Excited Hydrogen-Enriched Swirling Flame",
+    "authors": "Junhua Zhang, Yu Liao, Qiang An, Yu Guan",
+    "journal": "AIAA Journal",
+    "year": 2026,
+    "summary": "A perturbed flame-front model and bispectral analysis separate the nonlinear interactions that strengthen or weaken a self-excited hydrogen-enriched swirling flame. Interactions involving the sum frequency or the second harmonic amplified the self-excited response, while the interaction between the difference frequency and the forcing frequency suppressed it. Spatial measurements also identify the flame tip as more responsive to forcing than the root. These results help explain how forcing frequency and flame location influence the success of open-loop control.",
+    "url": "https://doi.org/10.2514/1.J066096",
+    "image": "/images/publications/paper-14.jpg",
+    "image_alt": "Hydrogen-enriched swirling flame apparatus"
+  },
+  {
+    "title": "Effect of difference-frequency velocity fluctuations on the nonlinear response of a swirling flame",
+    "authors": "Junhua Zhang, Lei Li, Jianyi Zheng, Liangliang Xu, Fei Qi, Yu Guan",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2026,
+    "summary": "When a self-excited swirling flame is forced at an incommensurate frequency, it can respond strongly at the difference between the natural and forcing frequencies. The authors show that nonlinear velocity fluctuations generated at this difference frequency can dominate the corresponding global heat-release oscillations. A second-order flame-front analysis explains how those fluctuations drive the response. Including this mechanism in low-order models can improve predictions and help identify forcing conditions that suppress thermoacoustic instability.",
+    "url": "https://doi.org/10.1016/j.proci.2026.106589",
+    "image": "/images/publications/paper-22.jpg",
+    "image_alt": "Swirling flame apparatus and optical diagnostics"
+  },
+  {
+    "title": "Mitigation of thermoacoustic oscillations by open-loop acoustic forcing: Physical mechanisms and an a priori control-design framework",
+    "authors": "Yuxin Lei, Yu Liao, Junhua Zhang, Yu Guan",
+    "journal": "Combustion and Flame",
+    "year": 2026,
+    "summary": "The study separates two effects of open-loop acoustic forcing that occur at the same time: weakening the natural mode and amplifying the forced mode. The natural mode weakens as the flame response at its frequency falls, while the forced-mode pressure response depends more strongly on chamber acoustics than on the flame response. Dual-frequency measurements under stable conditions identify frequency bands that also suppress the unstable mode. This provides a way to choose forcing parameters before provoking self-excited oscillations and reduces the need for potentially damaging tests.",
+    "url": "https://doi.org/10.1016/j.combustflame.2026.115014",
+    "image": "/images/publications/paper-24.jpg",
+    "image_alt": "Experimental combustor and acoustic forcing equipment"
+  },
+  {
+    "title": "Nonlinear forced response of a self-excited conical lean-premixed flame",
+    "authors": "Fang Bian, Junhua Zhang, Chuhan Wang, Dong-hyuk Shin, Yu Guan",
+    "journal": "Physics of Fluids",
+    "year": 2026,
+    "summary": "A hybrid model resolves the flame with computational fluid dynamics and represents chamber acoustics with a low-order model. It reproduces the experimentally observed suppression region and shows that forcing shifts pressure and heat-release fluctuations out of phase, reducing acoustic energy production. The effect is concentrated in the upper flame, where detached flame pockets form and disappear. Identifying flame pinch-off as the link between forcing and suppression gives a physical explanation for why this conical flame responds to open-loop control.",
+    "url": "https://doi.org/10.1063/5.0342290",
+    "image": "/images/publications/paper-25.jpg",
+    "image_alt": "Flow and acoustic schematic of the conical flame system"
+  },
+  {
+    "title": "Transition of the Global Mode in Coaxial Swirling Jets After Vortex Breakdown",
+    "authors": "Junhua Zhang, Qiang An, Chuhan Wang, Jiaqi Wang, Jiaao Hao, Yu Guan",
+    "journal": "AIAA Journal",
+    "year": 2026,
+    "summary": "Experiments and global stability analysis show how the relative speeds of two coaxial swirling jets change the dominant oscillation after vortex breakdown. At low outer-to-inner velocity ratios, a precessing vortex core stays within the inner jet. At higher ratios, changes in the mean flow produce a single helical mode that spans both jets. Agreement between the measured coherent structures and the stability analysis explains how the flow setting changes the instability and helps interpret oscillations in coaxial aero-engine injectors.",
+    "url": "https://doi.org/10.2514/1.J066917",
+    "image": "/images/publications/paper-26.jpg",
+    "image_alt": "Coaxial swirling jet apparatus and measurement setup"
+  },
+  {
+    "title": "Active control of thermoacoustic instability in a lean-premixed hydrogen-enriched combustor via open-loop acoustic forcing",
+    "authors": "Yu Liao, Yongseok Choi, Peijin Liu, Kyu Tae Kim, Yu Guan",
+    "journal": "Combustion and Flame",
+    "year": 2025,
+    "summary": "The authors report the first experimental demonstration that open-loop acoustic forcing can suppress self-excited oscillations in a hydrogen-enriched turbulent combustor. Across mixtures with 20–50% hydrogen by volume, suppression improved with enrichment, reaching a 90% reduction in pressure amplitude with an input below 1% of thermal power. Under the tested conditions, the response switched from amplification to suppression at 40% hydrogen. This threshold shows why fuel composition matters when choosing forcing conditions for stable hydrogen-enriched gas turbines.",
+    "url": "https://doi.org/10.1016/j.combustflame.2025.114175",
+    "image": "/images/publications/paper-06.jpg",
+    "image_alt": "Acoustic forcing setup and flame response measurements"
+  },
+  {
+    "title": "Amplitude death in ring-coupled network with asymmetric thermoacoustic oscillators and nonlocal time-delay interactions",
+    "authors": "Liheng Zheng, Yu Liao, Kyu Tae Kim, Jie Zhou, Yu Guan",
+    "journal": "Nonlinear Dynamics",
+    "year": 2025,
+    "summary": "The study tests whether deliberately making coupled thermoacoustic oscillators different can extinguish their self-excited motion. A ring of modeled Rijke tubes combines nonlocal time-delay coupling with mismatches in natural frequency and heater power. Of the localized, side-by-side, and alternating arrangements tested, alternating asymmetry produced the widest range of conditions for complete quenching. The result identifies the spatial arrangement of the mismatches as a design variable for suppressing oscillations across a coupled network.",
+    "url": "https://doi.org/10.1007/s11071-024-10703-x",
+    "image": "/images/publications/paper-07.jpg",
+    "image_alt": "Ring oscillator network and asymmetry configurations"
+  },
+  {
+    "title": "Dynamics of two mutually coupled thermoacoustic oscillators under external dual forcing",
+    "authors": "Chenjun Zhao, Liheng Zheng, Jie Zhou, Yu Guan",
+    "journal": "Nonlinear Dynamics",
+    "year": 2025,
+    "summary": "The authors model two coupled Rijke tubes to determine how best to distribute a fixed forcing input. Applying equal forcing energy to both oscillators reduced the overall thermoacoustic amplitude by up to 60% relative to forcing just one. Adjusting the phase difference between inputs yielded up to 5% additional reduction, while detuning their frequencies weakened suppression. Spectral power analysis helps explain why forcing one oscillator alone is less effective, giving designers a basis for choosing both the energy split and relative phase.",
+    "url": "https://doi.org/10.1007/s11071-025-11704-0",
+    "image": "/images/publications/paper-08.jpg",
+    "image_alt": "Maps of oscillator response under dual forcing"
+  },
+  {
+    "title": "Experimental investigation of solid propellants combustion response to pressure oscillations using advanced high-resolution diagnostics",
+    "authors": "Yu Liao, Bingning Jin, Siying Yang, Jiacheng Li, Peijin Liu, Yu Guan",
+    "journal": "Applied Energy",
+    "year": 2025,
+    "summary": "An experimental platform combines high-speed photomicrography, two-color pyrometry, and laser shadowgraphy to measure flame motion, temperature, and surface regression simultaneously in a solid propellant. The tests show that particle size and oxidizer loading affect steady burning, and that the pressure-driven response is strongest when the forcing frequency approaches a characteristic frequency of the propellant. The largest measured increase in mean burning rate exceeded 165%. Measuring these responses in a single test helps connect flame-scale behavior to solid rocket motor stability.",
+    "url": "https://doi.org/10.1016/j.apenergy.2024.124227",
+    "image": "/images/publications/paper-09.jpg",
+    "image_alt": "High-resolution propellant diagnostics setup"
+  },
+  {
+    "title": "Temperature-insensitive sound absorption of a high-temperature acoustic porous metasurface",
+    "authors": "Liheng Zheng, Hanjie Yang, Baorui Pan, Dan Sui, Jie Zhou, Yu Guan",
+    "journal": "Composites Part A: Applied Science and Manufacturing",
+    "year": 2025,
+    "summary": "The authors bond porous mullite-fiber layers to a ceramic skeleton to create a broadband absorber that works across a wide temperature range. Experiments and simulations show better absorption than uniform porous layers of the same thickness over the reported frequency bands. The analysis identifies the phase gradient across the metasurface units as the key to maintaining performance as temperature changes. This gives designers a way to limit the frequency drift that can undermine conventional absorbers in hot environments.",
+    "url": "https://doi.org/10.1016/j.compositesa.2025.109203",
+    "image": "/images/publications/paper-17.jpg",
+    "image_alt": "Cross-section of the acoustic porous metasurface"
+  },
+  {
+    "title": "Thermoacoustic instability in two acoustically coupled hydrogen-enriched combustors",
+    "authors": "Yu Liao, Yuxin Lei, Yongseok Choi, Peijin Liu, Kyu Tae Kim, Yu Guan",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2025,
+    "summary": "Two hydrogen-enriched combustors were acoustically coupled to test whether tuning their acoustic coupling could suppress self-excited oscillations. Hydrogen enrichment moved the flame response toward higher frequencies, while the coupled chamber geometry could favor lower acoustic frequencies. Deliberately separating those responses cut oscillations by up to 90% relative to the uncoupled baseline. The experiments also show that stronger coupling can reinforce an anti-phase mode, so the location and number of connections matter when integrating individual cans into a gas turbine.",
+    "url": "https://doi.org/10.1016/j.proci.2025.105914",
+    "image": "/images/publications/paper-18.jpg",
+    "image_alt": "Two coupled combustors and the connecting duct"
+  },
+  {
+    "title": "Ultrathin metaliner for dual suppression of broadband flow-induced noise and tonal thermoacoustic oscillations",
+    "authors": "Liheng Zheng, Jie Zhou, Yu Guan",
+    "journal": "International Journal of Mechanical Sciences",
+    "year": 2025,
+    "summary": "The authors combine a porous phase-gradient metasurface and embedded Helmholtz resonators in a liner only 2 cm thick. The porous layer redirects broadband sound into waves that dissipate along the liner, while the resonators target discrete thermoacoustic modes. A heated Rijke tube demonstrates simultaneous suppression of both noise sources. The proof of concept shows how a compact liner can tackle broadband and tonal noise together, with resonators that can be tuned to different modes.",
+    "url": "https://doi.org/10.1016/j.ijmecsci.2025.110988",
+    "image": "/images/publications/paper-19.jpg",
+    "image_alt": "Metaliner geometry and installation in a combustor"
+  },
+  {
+    "title": "液体火箭发动机燃烧不稳定研究：数据驱动方法",
+    "authors": "关昱、安强、徐冠宇、汪广旭",
+    "journal": "火箭推进",
+    "year": 2025,
+    "summary": "This review examines recent approaches to predicting combustion instability in liquid rocket engines from data. It brings together three lines of work: dynamical systems methods for interpreting oscillatory behavior, complex networks for representing interactions, and machine learning for identifying patterns in measurements or simulations. By organizing the literature around what these methods can reveal about instability, the review gives readers a starting point for choosing a data-driven approach to a prediction problem.",
+    "url": "https://doi.org/10.3969/j.issn.1672-9374.2025.01.003",
+    "image": "/images/publications/paper-20.jpg",
+    "image_alt": "Time traces and spectra of rocket combustion oscillations"
+  },
+  {
+    "title": "配对对称性破缺下五火焰筒环管燃烧室非线性动力学特性研究",
+    "authors": "张军华、关昱",
+    "journal": "推进技术",
+    "year": 2025,
+    "summary": "Experiments on a five-can lean-premixed combustor show how breaking pairwise symmetry changes the collective thermoacoustic response. The authors observed mixed in-phase and anti-phase synchronization, as well as breathing chimera states that alternate between phase locking and desynchronization. Some states evolved on a quasi-periodic attractor and had not been observed in the even-can configurations discussed in the paper. The findings identify broken pairwise symmetry as a source of more complex oscillations that designers should account for in can-annular combustors.",
+    "url": "https://link.cnki.net/urlid/11.1813.V.20251124.1436.002",
+    "image": "/images/publications/paper-21.jpg",
+    "image_alt": "Five-can combustor and ring coupling diagram"
+  },
+  {
+    "title": "Latent space-based machine learning prediction of coupled flame-flow fields in a hydrogen-enriched syngas combustor",
+    "authors": "Yi Yang, Junhua Zhang, Zhi X. Chen, Yu Guan, Qiang An",
+    "journal": "International Journal of Hydrogen Energy",
+    "year": 2024,
+    "summary": "Predicting a combustor’s flame and flow together is difficult because the measurements are high-dimensional and noisy. The authors train a local convolutional autoencoder to encode both fields in a shared latent space, then use a long short-term memory model to forecast their evolution. Tests on synchronized velocity and flame images from a hydrogen-enriched syngas combustor show that the method captures large-scale structures and generalizes to data held out from training. The shared representation also exposes similarities between the flame and flow that are harder to see in the original measurements.",
+    "url": "https://doi.org/10.1016/j.ijhydene.2024.11.103",
+    "image": "/images/publications/paper-01.jpg",
+    "image_alt": "Combustor and experimental diagnostics"
+  },
+  {
+    "title": "Low-order modeling of collective dynamics of four ring-coupled turbulent thermoacoustic oscillators",
+    "authors": "Yu Liao, Yu Guan, Peijin Liu, Kihun Moon, Kyu Tae Kim",
+    "journal": "Nonlinear Dynamics",
+    "year": 2024,
+    "summary": "Can a compact model predict how four turbulent combustors oscillate together? The authors represent each can as a Van der Pol oscillator and connect the four in a ring with dissipative, delayed, and reactive coupling. The model recovers experimentally observed states ranging from paired anti-phase synchronization to a spinning azimuthal mode and complete quenching. It also predicts the relative phases quantitatively in most cases, showing how a low-order model can capture important system-level dynamics across changes in mixture strength and combustor length.",
+    "url": "https://doi.org/10.1007/s11071-024-09426-w",
+    "image": "/images/publications/paper-02.jpg",
+    "image_alt": "Four-can combustor and oscillator coupling model"
+  },
+  {
+    "title": "Mutual synchronization and flame dynamics in an axially fuel-staged lean-premixed combustion system",
+    "authors": "Yu Guan, Yongseok Choi, Peijin Liu, Kyu Tae Kim",
+    "journal": "Proceedings of the Combustion Institute",
+    "year": 2024,
+    "summary": "Experiments on an axially fuel-staged combustor reveal that the direction of acoustic coupling matters for stability. Network analysis shows that oscillations tend to weaken when the secondary stage preferentially influences the primary stage, while dynamic mode decomposition shows that the secondary flame can also help drive instability upstream. The findings suggest a passive control route through changes to the secondary-stage mixture or thermal power. They also show why assessing the primary stage in isolation can miss an important source of instability.",
+    "url": "https://doi.org/10.1016/j.proci.2024.105197",
+    "image": "/images/publications/paper-03.jpg",
+    "image_alt": "Axially staged combustor schematic"
+  }
+]

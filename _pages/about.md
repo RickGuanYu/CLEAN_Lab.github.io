@@ -1,37 +1,51 @@
 ---
 permalink: /
-title: "Clean Combustion Dynamics Lab (CCDL)"
-author_profile: true
-redirect_from: 
+title: CLEAN Lab
+author_profile: false
+full_width: true
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Welcome to the Clean Combustion Dynamics Lab (CCDL) at the Hong Kong Polytechnic University. We aim to investigate and develop **cleaner**, **quieter**, and **safer** combustion technologies that will benefit a better world. 
+<div class="clean-home">
+  <div>
+    <div class="clean-intro">
+      <img src="{{ '/images/clean-lab-logo.png' | relative_url }}" alt="CLEAN Lab logo" width="383" height="383">
+      <p>CLEAN Lab is based in the Department of Aeronautical and Aviation Engineering at The Hong Kong Polytechnic University. We study combustion dynamics to develop cleaner, quieter, and safer energy and propulsion systems.</p>
+    </div>
 
-Group news!
-------
-2024.09.10 #Teacher's Day \
-<img src="images/GP-20240910.jpg" width="200"/>
+    <h2>Research focus</h2>
+    <ul>
+      <li><strong><span class="clean-letter">C</span>arbon-free energy</strong> — Study hydrogen and ammonia combustion for low-carbon energy systems.</li>
+      <li><strong><span class="clean-letter">L</span>ow-noise design</strong> — Understand and control combustion-driven oscillations and noise.</li>
+      <li><strong><span class="clean-letter">E</span>nergy utilization</strong> — Improve how combustion systems convert fuel energy into useful power.</li>
+      <li><strong><span class="clean-letter">A</span>I for combustion</strong> — Use machine learning and data-driven models to analyze and predict combustion dynamics.</li>
+      <li><strong>Aerospace propulsio<span class="clean-letter clean-letter-final">n</span></strong> — Investigate combustion stability in gas turbines and rocket engines.</li>
+    </ul>
+  </div>
 
-2024.08.23 #Four guys \
-<img src="images/GP-20240823.jpg" width="200"/>
-
-2024.06.29 #A group hotpot \
-<img src="images/GP-20240629.jpg" width="200"/>
-
-2024.09.05 Our group website is online now!
-
-Join us?
-------
-PhD opportunities [(more info)](https://www.polyu.edu.hk/gs/prospective-students/fellowship-scholarship-schemes/):
-1. Hong Kong PhD Fellowship Scheme 
-2. PolyU Presidential PhD Fellowship Scheme
-3. PolyU Research Postgraduate Scholarship
-
-Postdoc opportunities (Please contact PI):
-1. [RGC Postdoctoral Fellowship Scheme](https://www.ugc.edu.hk/eng/rgc/funding_opport/pdfs/) 
-2. [Hong Kong Scholar Program](https://www.hkscholars.org/)
-3. PolyU Postdoctoral Fellowship
-4. Other funding opportunities
-
+  {% assign featured_extensions = '.jpg,.jpeg,.png,.webp,.avif' | split: ',' %}
+  {% assign featured_count = 0 %}
+  {% capture featured_slides %}
+    {% for file in site.static_files %}
+      {% assign folder = file.path | slice: 0, 17 %}
+      {% assign extension = file.extname | downcase %}
+      {% if folder == '/images/featured/' and featured_extensions contains extension %}
+        {% assign label = file.basename | replace: '-', ' ' | replace: '_', ' ' %}
+        <img src="{{ file.path | relative_url | uri_escape }}" alt="{{ label | escape }}"{% if featured_count > 0 %} hidden loading="lazy"{% endif %}>
+        {% assign featured_count = featured_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+  {% endcapture %}
+  {% if featured_count > 0 %}
+  <section class="clean-featured" aria-label="Featured photos">
+    <div class="clean-featured-frame">
+      {{ featured_slides }}
+    </div>
+    {% if featured_count > 1 %}
+    {% include clean-featured-controls.html %}
+    {% endif %}
+  </section>
+  {% endif %}
+</div>

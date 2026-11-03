@@ -1,14 +1,25 @@
 ---
-layout: archive
-title: "Highlights"
-permalink: /portfolio/
-author_profile: true
+layout: single
+title: Highlights
+permalink: /highlights/
+author_profile: false
+redirect_from:
+  - /portfolio/
 ---
-
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
-
+<h2>Recent publications</h2>
+<div class="clean-paper-list">
+  {% for paper in site.data.clean_papers %}
+  <article class="clean-paper">
+    <figure class="clean-paper-figure">
+      <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="960" height="720" loading="lazy">
+    </figure>
+    <div class="clean-paper-content">
+      <h3><a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a></h3>
+      <p>{{ paper.authors | escape }}</p>
+      <p><em>{{ paper.journal | escape }}</em> · {{ paper.year }}</p>
+      <p class="clean-paper-summary">{{ paper.summary | escape }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+<p><a href="{{ site.author.googlescholar }}">More publications on Google Scholar</a></p>

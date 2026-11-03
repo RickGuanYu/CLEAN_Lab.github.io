@@ -1,0 +1,11 @@
+{% if include.show_heading or include.person.publications.size > 0 %}
+<p class="clean-publications-label"><strong>Highlights (1<sup>st</sup> author only)</strong></p>
+{% endif %}
+{% if include.person.publications.size > 0 %}
+<ol class="clean-publications">
+  {% for key in include.person.publications %}
+  {% assign paper = site.data.clean_team.publications[key] %}
+  <li><a href="{{ paper.url | escape }}">{{ paper.journal | escape }} ({{ paper.year }})</a></li>
+  {% endfor %}
+</ol>
+{% endif %}
