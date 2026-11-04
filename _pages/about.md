@@ -25,13 +25,13 @@ redirect_from:
     </ul>
   </div>
 
-  {% assign featured_extensions = '.jpg,.jpeg,.png,.webp,.avif' | split: ',' %}
+  {% assign featured_extensions = '.jpg,.jpeg,.png,.webp,.avif,.gif' | split: ',' %}
   {% assign featured_count = 0 %}
   {% capture featured_slides %}
     {% for file in site.static_files %}
-      {% assign folder = file.path | slice: 0, 17 %}
+      {% assign folder = file.path | slice: 0, 15 %}
       {% assign extension = file.extname | downcase %}
-      {% if folder == '/images/featured/' and featured_extensions contains extension %}
+      {% if folder == '/images/Flames/' and featured_extensions contains extension %}
         {% assign label = file.basename | replace: '-', ' ' | replace: '_', ' ' %}
         <img src="{{ file.path | relative_url | uri_escape }}" alt="{{ label | escape }}"{% if featured_count > 0 %} hidden loading="lazy"{% endif %}>
         {% assign featured_count = featured_count | plus: 1 %}
@@ -39,7 +39,7 @@ redirect_from:
     {% endfor %}
   {% endcapture %}
   {% if featured_count > 0 %}
-  <section class="clean-featured" aria-label="Featured photos">
+  <section class="clean-featured" aria-label="Featured flame images" data-interval="10000">
     <div class="clean-featured-frame">
       {{ featured_slides }}
     </div>
@@ -49,3 +49,17 @@ redirect_from:
   </section>
   {% endif %}
 </div>
+
+<section class="clean-news" aria-labelledby="clean-news-title">
+  <h2 id="clean-news-title">Recent news</h2>
+  {% if site.data.clean_news.size > 0 %}
+    {% assign recent_news = site.data.clean_news | sort: 'date' | reverse %}
+    <ul>
+      {% for item in recent_news limit: 5 %}
+      <li><time datetime="{{ item.date | escape }}">{{ item.date | date: "%B %e, %Y" }}</time> · {% if item.url %}<a href="{{ item.url | escape }}">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Lab news will appear here.</p>
+  {% endif %}
+</section>

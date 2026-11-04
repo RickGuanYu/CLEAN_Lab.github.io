@@ -358,3 +358,30 @@
     object-fit: cover;
   }
 }
+
+.clean-home > div > ul {
+  margin-bottom: 0;
+}
+
+.clean-news {
+  text-align: justify;
+}
+
+@include breakpoint($large) {
+  .clean-home {
+    align-items: stretch;
+  }
+
+  .clean-home > .clean-featured {
+    display: grid;
+  }
+
+  .clean-home .clean-featured-frame {
+    position: relative;
+  }
+
+  .clean-home .clean-featured-frame img {
+    position: absolute;
+    inset: 0;
+  }
+}
