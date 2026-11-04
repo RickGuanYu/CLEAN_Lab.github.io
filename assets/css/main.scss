@@ -372,12 +372,10 @@
     align-items: stretch;
   }
 
-  .clean-home > .clean-featured {
-    display: grid;
-  }
-
   .clean-home .clean-featured-frame {
-    position: relative;
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
   }
 
   .clean-home .clean-featured-frame img {
