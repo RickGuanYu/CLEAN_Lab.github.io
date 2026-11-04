@@ -5,7 +5,7 @@ members:
     photo: /images/people/bian-fang.jpg
     publications: [bian]
   - name: "Yuxin LEI"
-    duration: "2024.05–present"
+    duration: "2024.05 -- present"
     role: "PhD student"
     photo: /images/people/lei-yuxin.jpg
     publications: [lei, coupled]
@@ -15,24 +15,24 @@ members:
     photo: /images/people/yang-yi.jpg
     publications: [yang]
   - name: "Junhua ZHANG"
-    duration: "2025.04–present"
+    duration: "2025.04 -- present"
     role: "Postdoctoral fellow"
     photo: /images/people/zhang-junhua.jpg
     publications: [jets, diff, forced, cn]
   - name: "Weiping YU"
-    duration: "2025.09–present"
+    duration: "2025.09 -- present"
     role: "PhD student"
     photo: /images/people/yu-weiping.jpg
   - name: "Zundi LIU"
-    duration: "2026.03–present"
+    duration: "2026.03 -- present"
     role: "Postdoctoral fellow"
     photo: /images/people/liu-zundi.jpg
   - name: "Weiyuan LIANG"
-    duration: "2026.09–present"
+    duration: "2026.09 -- Present"
     role: "PhD student"
     photo: /images/people/liang-weiyuan.jpg
   - name: "Duxing WANG"
-    duration: "2026.10–present"
+    duration: "2026.10 -- present"
     role: "Research assistant"
     photo: /images/people/wang-duxing.jpg
 
