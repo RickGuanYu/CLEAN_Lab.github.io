@@ -11,12 +11,12 @@ redirect_from:
   {% for paper in site.data.clean_papers %}
   <article class="clean-paper">
     <figure class="clean-paper-figure">
-      <img src="{{ paper.image | relative_url }}" alt="{{ paper.image_alt | escape }}" width="960" height="720" loading="lazy">
+      <img src="{{ paper.image | relative_url | uri_escape }}" alt="{{ paper.image_alt | escape }}" width="960" height="720" loading="lazy">
     </figure>
     <div class="clean-paper-content">
       <h3><a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a></h3>
       <p>{{ paper.authors | escape }}</p>
-      <p><em>{{ paper.journal | escape }}</em> · {{ paper.year }}</p>
+      <p><em>{{ paper.journal | escape }}</em> · {{ paper.date | append: "-01" | date: "%B %Y" }}</p>
       <p class="clean-paper-summary">{{ paper.summary | escape }}</p>
     </div>
   </article>
