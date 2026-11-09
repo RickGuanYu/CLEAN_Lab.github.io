@@ -18,7 +18,7 @@ For available PhD and postdoctoral positions, email your CV to [Prof. Yu Guan](m
 
 ## Postdoctoral opportunities
 
-1. [RGC Postdoctoral Fellowship Scheme](https://www.ugc.edu.hk/eng/rgc/funding_opport/pdfs/)
+1. [RGC Junior Research Fellow Scheme (originally RGC Postdoc Scheme)](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/)
 2. [Hong Kong Scholar Program](https://www.hkscholars.org/)
 3. PolyU Postdoctoral Fellowship
 4. Other funding opportunities
